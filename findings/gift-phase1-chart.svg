@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="640" viewBox="0 0 880 640" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect x="0" y="0" width="880" height="640" fill="#ffffff"/>
+  <text x="440" y="34" font-size="22" font-weight="bold" text-anchor="middle" fill="#222">《礼物》11 模型：要推几次 × 读懂后想不想多</text>
+  <text x="440" y="56" font-size="13" text-anchor="middle" fill="#888">点的颜色=质量分（绿高红低）。左下角是理想区：一看就懂、不加戏。</text>
+
+  <!-- quadrant shading -->
+  <rect x="120" y="305" width="330" height="235" fill="#e8f5e9" opacity="0.5"/>
+  <rect x="120" y="70" width="330" height="235" fill="#fff8e1" opacity="0.5"/>
+  <rect x="450" y="305" width="330" height="235" fill="#f1f8e9" opacity="0.4"/>
+  <rect x="450" y="70" width="330" height="235" fill="#fdecea" opacity="0.5"/>
+
+  <!-- quadrant labels -->
+  <text x="130" y="330" font-size="13" fill="#2e7d32" opacity="0.8">理想区：一看就懂、不加戏</text>
+  <text x="130" y="90" font-size="13" fill="#b8860b" opacity="0.85">聪明过头：自己读对却加戏</text>
+  <text x="640" y="330" font-size="13" fill="#689f38" opacity="0.85" text-anchor="middle">老实但迟钝：要推、但干净</text>
+  <text x="640" y="90" font-size="13" fill="#c62828" opacity="0.85" text-anchor="middle">又拧又加戏</text>
+
+  <!-- gridlines -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="252" y1="70" x2="252" y2="540"/>
+    <line x1="384" y1="70" x2="384" y2="540"/>
+    <line x1="516" y1="70" x2="516" y2="540"/>
+    <line x1="648" y1="70" x2="648" y2="540"/>
+    <line x1="120" y1="446" x2="780" y2="446"/>
+    <line x1="120" y1="352" x2="780" y2="352"/>
+    <line x1="120" y1="258" x2="780" y2="258"/>
+    <line x1="120" y1="164" x2="780" y2="164"/>
+  </g>
+
+  <!-- axes -->
+  <line x1="120" y1="540" x2="790" y2="540" stroke="#333" stroke-width="2"/>
+  <line x1="120" y1="540" x2="120" y2="62" stroke="#333" stroke-width="2"/>
+  <polygon points="790,540 780,535 780,545" fill="#333"/>
+  <polygon points="120,62 115,72 125,72" fill="#333"/>
+
+  <!-- axis labels -->
+  <text x="455" y="585" font-size="15" text-anchor="middle" fill="#333">抵抗度  →  要推几次才到位</text>
+  <text x="150" y="558" font-size="12" fill="#777">一遍就懂</text>
+  <text x="700" y="558" font-size="12" fill="#777">死活不松口</text>
+  <text x="38" y="300" font-size="15" fill="#333" transform="rotate(-90 38 300)" text-anchor="middle">加戏程度  →  读懂后想不想多</text>
+  <text x="74" y="535" font-size="12" fill="#777">干净</text>
+  <text x="74" y="95" font-size="12" fill="#777">拼命加戏</text>
+
+  <!-- points -->
+  <!-- Gemini (1,1) -->
+  <circle cx="186" cy="493" r="8" fill="#1a9850" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="497" font-size="14" font-weight="bold" fill="#1a6b3a">Gemini 0.95</text>
+  <!-- GPT5.5 (2.5,3) -->
+  <circle cx="285" cy="399" r="8" fill="#66bd63" stroke="#fff" stroke-width="1.5"/>
+  <text x="298" y="403" font-size="13" fill="#3a7a38">GPT5.5 0.82</text>
+  <!-- deepseek-flash (3.4,3.7) -->
+  <circle cx="344" cy="366" r="8" fill="#a6d96a" stroke="#fff" stroke-width="1.5"/>
+  <text x="357" y="362" font-size="13" fill="#5a7a30">deepseek-flash 0.76</text>
+  <!-- opus (4,8) -->
+  <circle cx="384" cy="164" r="8" fill="#a6d96a" stroke="#fff" stroke-width="1.5"/>
+  <text x="397" y="168" font-size="13" font-weight="bold" fill="#7a6a10">opus 4.7  0.74</text>
+  <!-- deepseek-pro (5,1.1) -->
+  <circle cx="450" cy="488" r="8" fill="#fee08b" stroke="#fff" stroke-width="1.5"/>
+  <text x="463" y="492" font-size="13" fill="#8a7a20">deepseek-pro 0.65</text>
+  <!-- 豆包 (5,2.5) -->
+  <circle cx="450" cy="422" r="8" fill="#fee08b" stroke="#fff" stroke-width="1.5"/>
+  <text x="463" y="426" font-size="13" fill="#8a7a20">豆包 0.65</text>
+  <!-- grok (5.8,6) -->
+  <circle cx="503" cy="258" r="8" fill="#fdae61" stroke="#fff" stroke-width="1.5"/>
+  <text x="516" y="262" font-size="13" fill="#9a5a20">grok 0.53</text>
+  <!-- sonnet (6.2,3.5) -->
+  <circle cx="529" cy="375" r="8" fill="#d73027" stroke="#fff" stroke-width="1.5"/>
+  <text x="430" y="379" font-size="13" fill="#a3221c">sonnet 4.6  0.26</text>
+  <!-- 千问 (7.2,6.3) -->
+  <circle cx="595" cy="244" r="8" fill="#d73027" stroke="#fff" stroke-width="1.5"/>
+  <text x="608" y="248" font-size="13" fill="#a3221c">千问 0.22</text>
+  <!-- mimo (8,5) -->
+  <circle cx="648" cy="305" r="8" fill="#f46d43" stroke="#fff" stroke-width="1.5"/>
+  <text x="661" y="309" font-size="13" fill="#9a3a20">mimo 0.41</text>
+  <!-- hy3 (9,4) -->
+  <circle cx="714" cy="352" r="8" fill="#a50026" stroke="#fff" stroke-width="1.5"/>
+  <text x="600" y="338" font-size="13" font-weight="bold" fill="#a50026">hy3 0.15</text>
+</svg>
