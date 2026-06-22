@@ -1,109 +1,109 @@
 [
-  {"model": "Qwen3.7 Max", "slug": "qwen/qwen3.7-max", "src": "API·run0621×8", "tag": "纯结构·认同·零思考·铁稳",
+  {"model": "Qwen3.7 Max", "slug": "qwen/qwen3.7-max", "src": "API·run0621×8", "日期": "2026-05-26", "tag": "纯结构·认同·零思考·铁稳",
    "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 8}]},
 
-  {"model": "GPT-5.5", "slug": "openai/gpt-5.5", "src": "API·深挖×8+撒网×1", "tag": "纯结构·认同;偶发1次920",
+  {"model": "GPT-5.5", "slug": "openai/gpt-5.5", "src": "API·深挖×8+撒网×1", "日期": "2026-05-26", "tag": "纯结构·认同;偶发1次920",
    "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 8}, {"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "GPT-5.3 Codex", "slug": "openai/gpt-5.3-codex", "src": "API·深挖×8", "tag": "纯结构·认同;1次626",
+  {"model": "GPT-5.3 Codex", "slug": "openai/gpt-5.3-codex", "src": "API·深挖×8", "日期": "2026-05-26", "tag": "纯结构·认同;1次626",
    "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 7}, {"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "Fable-5", "slug": "anthropic/claude-fable-5", "src": "API·test_fable5", "tag": "纯结构·认同·没试数;177tok复述题",
+  {"model": "Fable-5", "slug": "anthropic/claude-fable-5", "src": "API·test_fable5", "日期": "2026-06-10", "tag": "纯结构·认同·没试数;177tok复述题",
    "off": [{"stance": "认同", "rtok": 177, "试数": "无", "n": 1}]},
 
-  {"model": "Grok 4.3", "slug": "x-ai/grok-4.3", "src": "API·撒网", "tag": "纯结构·认同·2.1s秒答",
+  {"model": "Grok 4.3", "slug": "x-ai/grok-4.3", "src": "API·撒网", "日期": "2026-05-26", "tag": "纯结构·认同·2.1s秒答",
    "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "Opus 4.7", "slug": "anthropic/claude-opus-4.7", "src": "API·撒网", "tag": "先否定但没试数",
+  {"model": "Opus 4.7", "slug": "anthropic/claude-opus-4.7", "src": "API·撒网", "日期": "2026-05-26", "tag": "先否定但没试数",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "DeepSeek V4 Pro", "slug": "deepseek/deepseek-v4-pro", "src": "API·撒网", "tag": "995抠16边界·没试数",
+  {"model": "DeepSeek V4 Pro", "slug": "deepseek/deepseek-v4-pro", "src": "API·撒网", "日期": "2026-05-26", "tag": "995抠16边界·没试数",
    "off": [{"stance": "995", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "Sonnet 4.6", "slug": "anthropic/claude-sonnet-4.6", "src": "API·撒网", "tag": "先否定+试数轻(5)",
+  {"model": "Sonnet 4.6", "slug": "anthropic/claude-sonnet-4.6", "src": "API·撒网", "日期": "2026-05-26", "tag": "先否定+试数轻(5)",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "豆包 Seed 1.6", "slug": "bytedance-seed/seed-1.6", "src": "API·撒网", "tag": "先否定+试数轻(5/3/7)",
+  {"model": "豆包 Seed 1.6", "slug": "bytedance-seed/seed-1.6", "src": "API·撒网", "日期": "2026-05-26", "tag": "先否定+试数轻(5/3/7)",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "MiMo v2.5 Pro", "slug": "xiaomi/mimo-v2.5-pro", "src": "API·撒网", "tag": "先否定+试数轻(3/40)",
+  {"model": "MiMo v2.5 Pro", "slug": "xiaomi/mimo-v2.5-pro", "src": "API·撒网", "日期": "2026-05-26", "tag": "先否定+试数轻(3/40)",
    "on_flag": "无答(手跑反向BFS烧满2万token,费力答错)",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "GLM-5.2", "slug": "z-ai/glm-5.2", "src": "API·run0620×8", "tag": "off不稳(5对/1边界/2错)",
+  {"model": "GLM-5.2", "slug": "z-ai/glm-5.2", "src": "API·run0620×8", "日期": "2026-06-20", "tag": "off不稳(5对/1边界/2错)",
    "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 5}, {"stance": "995", "rtok": 0, "试数": "无", "n": 1}, {"stance": "否定", "rtok": 0, "试数": "无", "n": 2}]},
 
-  {"model": "DeepSeek V4 Flash", "slug": "deepseek/deepseek-v4-flash", "src": "API·撒网", "tag": "认同但试数重(7个)",
+  {"model": "DeepSeek V4 Flash", "slug": "deepseek/deepseek-v4-flash", "src": "API·撒网", "日期": "2026-05-26", "tag": "认同但试数重(7个)",
    "on_flag": "否定·39(正文灌1.5万token自我说翻,费力答错)",
    "off": [{"stance": "认同", "rtok": 0, "试数": "重", "n": 1}]},
 
-  {"model": "豆包 Seed 1.6 Flash", "slug": "bytedance-seed/seed-1.6-flash", "src": "API·撒网", "tag": "先否定+试数重(枚举9~15)",
+  {"model": "豆包 Seed 1.6 Flash", "slug": "bytedance-seed/seed-1.6-flash", "src": "API·撒网", "日期": "2026-05-26", "tag": "先否定+试数重(枚举9~15)",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "重", "n": 1}]},
 
-  {"model": "Kimi K2.6", "slug": "moonshotai/kimi-k2.6", "src": "API·撒网", "tag": "先否定+试数重(3/5/6/7)",
+  {"model": "Kimi K2.6", "slug": "moonshotai/kimi-k2.6", "src": "API·撒网", "日期": "2026-05-26", "tag": "先否定+试数重(3/5/6/7)",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "重", "n": 1}]},
 
-  {"model": "Gemini 3.1 Pro", "slug": "google/gemini-3.1-pro", "src": "API·撒网", "tag": "认同·没试数;off关不掉2920tok",
+  {"model": "Gemini 3.1 Pro", "slug": "google/gemini-3.1-pro", "src": "API·撒网", "日期": "2026-05-26", "tag": "认同·没试数;off关不掉2920tok",
    "off": [{"stance": "认同", "rtok": 2920, "试数": "无", "n": 1}]},
 
-  {"model": "Gemini 3.5 Flash", "slug": "google/gemini-3.5-flash", "src": "API·撒网", "tag": "认同·没试数;off关不掉3202tok",
+  {"model": "Gemini 3.5 Flash", "slug": "google/gemini-3.5-flash", "src": "API·撒网", "日期": "2026-05-26", "tag": "认同·没试数;off关不掉3202tok",
    "off": [{"stance": "认同", "rtok": 3202, "试数": "无", "n": 1}]},
 
-  {"model": "MiniMax M2.7", "slug": "minimax/minimax-m2.7", "src": "API·撒网", "tag": "认同·正文净;思维链枚举被5111tok罚",
+  {"model": "MiniMax M2.7", "slug": "minimax/minimax-m2.7", "src": "API·撒网", "日期": "2026-05-26", "tag": "认同·正文净;思维链枚举被5111tok罚",
    "off": [{"stance": "认同", "rtok": 5111, "试数": "无", "n": 1}]},
 
-  {"model": "GPT-5.4", "slug": "openai/gpt-5.4", "src": "API·深挖×8+撒网×1", "tag": "off无题感,2/9",
+  {"model": "GPT-5.4", "slug": "openai/gpt-5.4", "src": "API·深挖×8+撒网×1", "日期": "2026-05-26", "tag": "off无题感,2/9",
    "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 2}, {"stance": "否定", "rtok": 0, "试数": "无", "n": 7}]},
 
-  {"model": "混元 hy3", "slug": "tencent/hy3-preview", "src": "API·撒网", "tag": "off读反题→31",
+  {"model": "混元 hy3", "slug": "tencent/hy3-preview", "src": "API·撒网", "日期": "2026-05-26", "tag": "off读反题→31",
    "on_flag": "无答(n=？刷屏烧满2万token,费力答错)",
    "off": [{"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "Claude Haiku 4.5", "slug": "anthropic/claude-haiku-4.5", "src": "API·撒网", "tag": "假装跑代码报990",
+  {"model": "Claude Haiku 4.5", "slug": "anthropic/claude-haiku-4.5", "src": "API·撒网", "日期": "2026-05-26", "tag": "假装跑代码报990",
    "off": [{"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "GLM 5.1", "slug": "z-ai/glm-5.1", "src": "API·撒网", "tag": "自创二进制理论正文硬磨→668",
+  {"model": "GLM 5.1", "slug": "z-ai/glm-5.1", "src": "API·撒网", "日期": "2026-05-26", "tag": "自创二进制理论正文硬磨→668",
    "off": [{"stance": "否定", "rtok": 2700, "试数": "无", "n": 1}]},
 
-  {"model": "Gemini(web)", "slug": "web/gemini", "src": "网页", "tag": "认同·没试数;思考几秒(按500tok)",
+  {"model": "Gemini(web)", "slug": "web/gemini", "src": "网页", "日期": "2026-05-26", "tag": "认同·没试数;思考几秒(按500tok)",
    "off": [{"stance": "认同", "rtok": 500, "试数": "无", "n": 1}]},
 
-  {"model": "Opus(web)", "slug": "web/opus", "src": "网页", "tag": "先否定:你的关键判断错了+试数轻(3)",
+  {"model": "Opus(web)", "slug": "web/opus", "src": "网页", "日期": "2026-05-26", "tag": "先否定:你的关键判断错了+试数轻(3)",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "Sonnet(web)", "slug": "web/sonnet", "src": "网页", "tag": "先否定(≈opus,先说我不对)+试数轻",
+  {"model": "Sonnet(web)", "slug": "web/sonnet", "src": "网页", "日期": "2026-05-26", "tag": "先否定(≈opus,先说我不对)+试数轻",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "Kimi(web)", "slug": "web/kimi", "src": "网页", "tag": "先否定(说法不成立)后自纠+试数重",
+  {"model": "Kimi(web)", "slug": "web/kimi", "src": "网页", "日期": "2026-05-26", "tag": "先否定(说法不成立)后自纠+试数重",
    "off": [{"stance": "先否定", "rtok": 0, "试数": "重", "n": 1}]},
 
-  {"model": "mimo(web)", "slug": "web/mimo", "src": "网页", "tag": "认同·正文净,但开了超长thinking(重)",
+  {"model": "mimo(web)", "slug": "web/mimo", "src": "网页", "日期": "2026-05-26", "tag": "认同·正文净,但开了超长thinking(重)",
    "off": [{"stance": "认同", "rtok": 12000, "试数": "无", "n": 1, "note": "思考量为附件思考日志的估值"}]},
 
-  {"model": "DeepSeek(web)", "slug": "web/deepseek", "src": "网页", "tag": "认同;超长thinking(重)+正文试数重",
+  {"model": "DeepSeek(web)", "slug": "web/deepseek", "src": "网页", "日期": "2026-05-26", "tag": "认同;超长thinking(重)+正文试数重",
    "off": [{"stance": "认同", "rtok": 12000, "试数": "重", "n": 1, "note": "思考量为附件思考日志的估值"}]},
 
-  {"model": "GPT-5.4(web)", "slug": "web/gpt-5.4", "src": "网页", "tag": "读反题→336·试数轻",
+  {"model": "GPT-5.4(web)", "slug": "web/gpt-5.4", "src": "网页", "日期": "2026-05-26", "tag": "读反题→336·试数轻",
    "off": [{"stance": "否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "混元3(web)", "slug": "web/hunyuan3", "src": "网页", "tag": "先否定→23(错)·试数轻",
+  {"model": "混元3(web)", "slug": "web/hunyuan3", "src": "网页", "日期": "2026-05-26", "tag": "先否定→23(错)·试数轻",
    "off": [{"stance": "否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "GLM智谱新站(web)", "slug": "web/glm-zhipu", "src": "网页", "tag": "想通思路却先否定用户、漏2/4/8写成999·试数轻",
+  {"model": "GLM智谱新站(web)", "slug": "web/glm-zhipu", "src": "网页", "日期": "2026-06-20", "tag": "想通思路却先否定用户、漏2/4/8写成999·试数轻",
    "off": [{"stance": "否定", "rtok": 0, "试数": "轻", "n": 1}]},
 
-  {"model": "豆包(web)", "slug": "web/doubao", "src": "网页", "tag": "逻辑说反、拒绝收尾(没给数)",
+  {"model": "豆包(web)", "slug": "web/doubao", "src": "网页", "日期": "2026-05-26", "tag": "逻辑说反、拒绝收尾(没给数)",
    "off": [{"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "Grok(web)", "slug": "web/grok", "src": "网页", "tag": "禁脚本只敢估930-960(没算)",
+  {"model": "Grok(web)", "slug": "web/grok", "src": "网页", "日期": "2026-05-26", "tag": "禁脚本只敢估930-960(没算)",
    "off": [{"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "千问(web)", "slug": "web/qwen", "src": "网页", "tag": "先否定→14(错)",
+  {"model": "千问(web)", "slug": "web/qwen", "src": "网页", "日期": "2026-05-26", "tag": "先否定→14(错)",
    "off": [{"stance": "否定", "rtok": 0, "试数": "无", "n": 1}]},
 
-  {"model": "GLM5.1(web)", "slug": "web/glm-5.1", "src": "网页", "tag": "手画反推树→39(错)·试数重",
+  {"model": "GLM5.1(web)", "slug": "web/glm-5.1", "src": "网页", "日期": "2026-05-26", "tag": "手画反推树→39(错)·试数重",
    "off": [{"stance": "否定", "rtok": 0, "试数": "重", "n": 1}]},
 
-  {"model": "GLM智谱清言(web)", "slug": "web/glm-qingyan", "src": "网页", "tag": "读反题手算4000行→28·史诗费力",
+  {"model": "GLM智谱清言(web)", "slug": "web/glm-qingyan", "src": "网页", "日期": "2026-06-20", "tag": "读反题手算4000行→28·史诗费力",
    "off": [{"stance": "否定", "rtok": 20000, "试数": "重", "n": 1, "note": "4000行手算按费力计"}]}
 ]

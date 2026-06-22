@@ -9,13 +9,24 @@
 
 用法：python scoring/build_readme.py
 """
-import subprocess, sys, os, re
+import subprocess, sys, os, re, json
 from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 PY = sys.executable
 README = os.path.join(REPO, "README.md")
+
+
+def latest_added(n_dates=2):
+    """从 collatz 数据里挑最近 n_dates 个加入批次的模型，去重，拼成一行。"""
+    data = json.load(open(os.path.join(HERE, "models-collatz.json"), encoding="utf-8"))
+    dated = [(m.get("日期", "2026-05-26"), m["model"]) for m in data]
+    recent = sorted({d for d, _ in dated}, reverse=True)[:n_dates]
+    # 同一批次里，正式入口(非网页)的模型名排前面，网页变体靠后
+    pool = sorted({name for d, name in dated if d in recent},
+                  key=lambda nm: ("(web)" in nm, nm))
+    return "🆕 最近加入：" + " · ".join(pool)
 
 
 def run_md(script, data):
@@ -41,6 +52,7 @@ def main():
         text = f.read()
     text = inject(text, "COLLATZ", collatz)
     text = inject(text, "GIFT", gift)
+    text = inject(text, "LATEST", latest_added())
     text = re.sub(r"(<!-- UPDATED -->).*?(<!-- /UPDATED -->)",
                   lambda m: f"{m.group(1)}{today}{m.group(2)}", text)
     with open(README, "w", encoding="utf-8") as f:
