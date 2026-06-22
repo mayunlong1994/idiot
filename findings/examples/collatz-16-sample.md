@@ -1,6 +1,6 @@
 # 样例：collatz-16 输出长什么样
 
-`python run.py --test collatz-16 --modes off,on --reps 8` 跑完后，`results/collatz-16/run-<时间戳>/summary.md` 大致是这样（节选我们自己的一次 GPT 探针）：
+`python testing/run.py --test collatz-16 --modes off,on --reps 8` 跑完后，`testing/transcripts/collatz-16/run-<时间戳>/summary.md` 大致是这样（节选我们自己的一次 GPT 探针）：
 
 ```
 # Collatz 钓鱼题 — 结果汇总

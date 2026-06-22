@@ -5,20 +5,23 @@
 ## 为什么用 API，不用网页
 
 网页/App 对话框测不干净，至少这些你控不了：是否默认开 thinking、推理预算多大、有没有鼓励"详细分析"的隐藏系统提示、是否自动调工具/搜索、温度采样、同题多次是否走缓存或路由到不同版本。
-API（这里走 OpenRouter，一个 key 通各家）能统一 prompt / 温度 / max_tokens，并用 `reasoning` 参数显式控制推理开关——这才谈得上"对照实验"。
+API（这里走 OpenRouter，一个 key 通各家）能统一 prompt / 温度 / max_tokens，并用 `reasoning` 参数显式控制推理开关，是正规的"对照实验"。
 
 ## 工具结构（解耦）
 
 ```
 IDIOT/
-  harness/
-    run.py                单轮跑分器：读 models + 一个 test，调 API，存结果
-    run_convo.py          多轮自适应跑法（内置 API 裁判，给《礼物》这类多轮题用）
+  tests/<id>/             一道题：test.json(单轮) / protocol.json(多轮) + 答案键 + 评分标准
+  testing/              ▶ 跑测试（产出原始回答，不打分）
+    run.py                单轮跑分器：读 models + 一个 test，调 API，存 transcript
+    run_convo.py          多轮自适应跑法（自带 v1 裁判；v2 评分不用它）
     convo.py              多轮底层助手（手动逐轮）
     models.json           待测模型名单 [{name, slug}, ...]
-  tests/<id>/test.json    一道单轮题（题面/系统提示/标准答案/默认模式）
-  tests/<id>/protocol.json 一道多轮题（台词/阶梯/诊断）
-  results/<id>/...        输出（summary.md + 明细 + _raw.jsonl）
+    transcripts/<id>/...  原始回答输出（summary.md + 明细 + _raw.jsonl）
+  scoring/              ▶ 算分（读客观判定数据，不跑模型）
+    score_*.py            确定性算分，权重置顶
+    models-*.json         评分数据源（加模型=加一行）
+    build_readme.py       把榜单注入 README
   openrouter.txt          API key（脚本自动读，已 .gitignore）
 ```
 
@@ -61,12 +64,12 @@ OpenRouter 统一用 `reasoning` 参数：
 
 ## 踩过的坑（方法论教训）
 
-1. **单次采样会骗人。** 同一格 N=1 可能抽到离群值（GPT-5.5 关推理我们见过一次 920，重复 8 次其实 8/8）。**要给模型定性，必须 `--reps` 多跑看分布**，别拿一次结果下结论。
-2. **"嘴上禁思考" ≠ "API 关推理"，是两个不同的干预。** prompt 里写"凭直觉别深想"，模型可能照样偷偷推理；`reasoning:{enabled:false}` 才是真把通道关死。两者效果差很多，别混为一谈（这正是 Collatz-16 里 codex 之谜的关键）。要测"被告知用直觉"就写进 prompt，要测"无思考能力"就用参数。
-3. **部分 provider 无视 `enabled:false`。** Gemini、MiniMax、某些 pro 模型关不掉推理，reasoning_tokens 仍 >0。看结果时先核对 token，别把"没关成功"的当"关了"。
+1. **单次采样会骗人。** 同一格 N=1 可能抽到离群值（GPT-5.5 关推理我们见过一次 920，重复 8 次其实 8/8）。**要给模型定性，必须 `--reps` 多跑看分布**。
+2. **"嘴上禁思考" ≠ "API 关推理"，是两个不同的干预。** prompt 里写"凭直觉别深想"，模型可能照样偷偷推理；`reasoning:{enabled:false}` 才是真把通道关死。两者效果差很多，不应该混为一谈（这正是 Collatz-16 里 codex 之谜的关键）。
+3. **部分 provider 无视 `enabled:false`。** 某些模型关不掉推理，reasoning_tokens 仍 >0。看结果时先核对 token，别把"没关成功"当成"关了"。
 4. **判分器只是粗筛，必须看原文。** `grade()` 只看回答结尾 400 字里有没有标准答案/已知错答；模型不给干净数字时会抓个邻近数字充数。最终结论要打开 `.md` 逐个核。
 5. **"推理到死" / 截断。** 有的模型（混元 hy3、MiMo Pro）会一直推理到撞 `max_tokens`（finish=length）都不给答案；有的（某 provider 上的 DeepSeek Flash）在正文里狂列枚举、自相矛盾、被截断。这些是真实的失败模式，summary 里会体现为 DNF/无答案。
-6. **provider 路由会变。** 同一 slug，OpenRouter 可能路由到不同上游（Azure/OpenAI/Novita/SiliconFlow…），速度、价格、甚至行为都可能不同。summary 里记了 `provider`，异常时先看是不是换了家。
+6. **provider 路由会变。** 同一 slug，OpenRouter 可能路由到不同上游（Azure/OpenAI/Novita/SiliconFlow…），速度、价格、甚至行为都可能不同。summary 里记了 `provider`，异常时先看是不是这里换了。
 7. **温度默认不传。** 很多推理模型只接受 temperature=1，强行设 0 会报错；所以默认 `temperature:null`（不传）。要控温在题里显式设。
 
 ## 成本

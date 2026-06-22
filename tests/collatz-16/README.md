@@ -24,8 +24,7 @@ Collatz 规则：偶数除以 2，奇数变 3n+1，反复操作直到第一次�
 ## 怎么跑
 
 ```bash
-cd harness
-python run.py --test collatz-16 --modes off,on --reps 8
+python testing/run.py --test collatz-16 --modes off,on --reps 8
 ```
 
 - `--modes off,on`：分别在"关推理"和"开推理"下各跑。**这是这道题最有意思的对照**——见 `findings/`，我们发现很多模型开了推理就对、关了推理才露馅。
@@ -66,8 +65,7 @@ Not horsepower — **reading the question**:
 ### How to run
 
 ```bash
-cd harness
-python run.py --test collatz-16 --modes off,on --reps 8
+python testing/run.py --test collatz-16 --modes off,on --reps 8
 ```
 
 - `--modes off,on`: run once with reasoning disabled and once enabled. **This is the most interesting contrast** — see `findings/`: many models get it right *with* reasoning and only flop *without* it.

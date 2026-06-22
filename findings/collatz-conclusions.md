@@ -59,4 +59,4 @@ Collatz 规则：偶数 ÷2，奇数 ×3+1，反复操作直到第一次到 1。
 
 ## 数据出处
 
-方法与工具见 [`../docs/methodology.md`](../docs/methodology.md)；自己跑 `run.py` 的结果会落在 `results/collatz-16/`。（本结论里的 GPT 深挖探针、原话 prompt 对照等明细来自我们自己的私有跑批，未随仓库发布。）
+方法与工具见 [`../scoring/methodology.md`](../scoring/methodology.md)；自己跑 `testing/run.py` 的结果会落在 `testing/transcripts/collatz-16/`。（本结论里的 GPT 深挖探针、原话 prompt 对照等明细，原始 transcript 见 `history/01-Collatz/04-GPT-5.5专项深挖/`。）

@@ -162,7 +162,7 @@ python scoring/build_readme.py                                # 把榜单刷进 
 ```
 
 > Windows：`set PYTHONUTF8=1`，否则中文乱码。PowerShell 写给 Python 读的 json 要无 BOM。
-> 模型 slug：见 [`testing/openrouter-api.md`](testing/openrouter-api.md)。
+> 模型 slug：见 [`testing/OpenRouter API guideline.md`](testing/OpenRouter%20API%20guideline.md)。
 
 ## 评分怎么做到客观
 

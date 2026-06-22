@@ -36,19 +36,23 @@
 ## 怎么跑
 
 ```bash
-cd harness
-python run_convo.py --model anthropic/claude-opus-4.7 --judge google/gemini-3.1-pro-preview --reps 3
+python testing/run_convo.py --model anthropic/claude-opus-4.7 --judge google/gemini-3.1-pro-preview --reps 3
 ```
 
-`run_convo.py` 全自动：自己走阶梯、每轮调**裁判模型**判是否到位、命中即停、问诊断、再调裁判按 `rubric.md` 打分。**裁判别用被测模型自己**（避免自评）。结果在 `results/gift/<model>/`：每 rep 的 `transcript.md` + `verdict.json` + 聚合 `summary.md`。
+`run_convo.py` 自动走阶梯、命中即停、问诊断，把多轮对话存成 transcript。结果在 `testing/transcripts/gift/<model>/`。**裁判别用被测模型自己**（避免自评）。
+> 注：run_convo 自带一个 v1 裁判会顺手打个分，但 **v2 评分不用它**——见下。
 
-## 判分（`rubric.md`）
+## 判分（v2：两遍客观判定 + 脚本算分）
 
-质量分 = 基底（按命中档，L0=0.90…L4=0.15）+ 微调。**北极星是"直觉"**：最高分只给"R0 自达 + 干净 + 线索又多又准"。加戏/踩陷阱每处 −0.04（**自己收回也照扣**），翻供每次 −0.04，漏钩子不扣。
+v1 那套"裁判直接打 0.15–0.95 质量分"**已弃用**（一遍式让裁判既找线索又打分会算术崩坏）。v2 拆成两步：
+1. **两遍 subagent 只判客观事实**：钩子命中/漏/误读、四条结论主干、命中档、翻供/加戏/踩陷阱计数——**不打分**。
+2. **`scoring/score_gift.py` 确定性算分**：59/60 结论闸（结论错就封死 59，挖再多线索也上不去）+ 载重加权，权重集中在脚本顶部。
+
+完整设计见 [`scoring-v2.md`](scoring-v2.md)。
 
 ## 本目录文件
 
-- `story.txt` 小说原文 · `protocol.json` 台词与阶梯 · `answer-key.md` 作者确认的真相+八条解读+两个陷阱 · `rubric.md` 评分标准 · `runner-guide.md` 给人/agent 看的详细操作规程（`run_convo.py` 已把它自动化）。
+- `story.txt` 小说原文 · `protocol.json` 台词与阶梯 · `answer-key.md` 作者确认的真相+八条解读+两个陷阱 · `scoring-v2.md` **现行评分标准** · `rubric.md` v1 评分（已弃用，仅 run_convo 内置裁判还在用）· `runner-guide.md` 详细操作规程。
 
 ## 注意
 
@@ -94,19 +98,23 @@ Not "did it understand" — nearly every model *sees* the clues. The spread come
 ### How to run
 
 ```bash
-cd harness
-python run_convo.py --model anthropic/claude-opus-4.7 --judge google/gemini-3.1-pro-preview --reps 3
+python testing/run_convo.py --model anthropic/claude-opus-4.7 --judge google/gemini-3.1-pro-preview --reps 3
 ```
 
-`run_convo.py` is fully automatic: it walks the ladder, calls a **judge model** after each turn to decide whether the core reading is reached, stops on hit, asks the diagnostics, then calls the judge to score against `rubric.md`. **Don't use the model under test as its own judge.** Output in `results/gift/<model>/`: each rep's `transcript.md` + `verdict.json`, plus an aggregated `summary.md`.
+`run_convo.py` walks the ladder, stops on hit, asks the diagnostics, and saves the multi-turn conversation as a transcript. Output in `testing/transcripts/gift/<model>/`. **Don't use the model under test as its own judge.**
+> Note: run_convo ships with a v1 judge that also assigns a score, but **v2 scoring does not use it** — see below.
 
-### Scoring (`rubric.md`)
+### Scoring (v2: two-pass objective judging + script)
 
-Quality = base (by hit-level, L0=0.90 … L4=0.15) + adjustments. **North star is "intuition"**: top marks only for "reached at R0 + clean + rich, accurate clues." Each over-reading / trap −0.04 (**docked even if self-retracted**), each retraction −0.04; missing fine-grained clues is *not* penalized.
+The v1 "judge directly assigns a 0.15–0.95 quality score" approach is **retired** (one-pass judging that both finds clues and scores breaks down on arithmetic). v2 splits it in two:
+1. **Two subagent passes judge only objective facts**: clue hit/miss/misread, the four conclusion pillars, hit-level, counts of retraction/over-reading/traps — **no scoring**.
+2. **`scoring/score_gift.py` computes deterministically**: a 59/60 conclusion gate (wrong conclusion is capped at 59 no matter how many clues) + load-weighted clues, weights at the top of the script.
+
+Full design in [`scoring-v2.md`](scoring-v2.md).
 
 ### Files here
 
-- `story.txt` the story · `protocol.json` the scripted lines + ladder · `answer-key.md` author-confirmed truth + 8 readings + 2 traps · `rubric.md` scoring · `runner-guide.md` the detailed human/agent procedure (`run_convo.py` automates it).
+- `story.txt` the story · `protocol.json` scripted lines + ladder · `answer-key.md` author-confirmed truth + 8 readings + 2 traps · `scoring-v2.md` **current scoring** · `rubric.md` v1 scoring (retired; only run_convo's built-in judge still uses it) · `runner-guide.md` the detailed procedure.
 
 ### Note
 
