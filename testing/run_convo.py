@@ -142,7 +142,7 @@ def main():
     rubric = open(os.path.join(pdir, "rubric.md"), encoding="utf-8").read()
 
     short = args.name or args.model.split("/")[-1].replace(":", "_")
-    outdir = os.path.join(REPO, "results", args.protocol, short)
+    outdir = os.path.join(HERE, "transcripts", args.protocol, short)
     os.makedirs(outdir, exist_ok=True)
     print(f"模型 {args.model} | 裁判 {args.judge} | reps {args.reps} | 输出 {outdir}\n")
 

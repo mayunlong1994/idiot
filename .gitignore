@@ -2,7 +2,11 @@
 openrouter.txt
 .env
 
-# 运行产物
-results/
+# 内部工作文档（不进公开仓库）
+HANDOFF.md
+STATUS.md
+_backup/
+
+# python
 __pycache__/
 *.pyc

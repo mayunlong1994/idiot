@@ -145,7 +145,7 @@ def main():
 
     modes = args.modes.split(",") if args.modes else test.get("reasoning_modes", ["default"])
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    outdir = os.path.join(HERE, os.pardir, "results", test["id"], f"run-{stamp}")
+    outdir = os.path.join(HERE, "transcripts", test["id"], f"run-{stamp}")
     os.makedirs(outdir, exist_ok=True)
 
     jobs = [(m, mode, r) for m in models for mode in modes for r in range(args.reps)]

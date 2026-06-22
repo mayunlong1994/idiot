@@ -58,7 +58,7 @@ def main():
         sys.exit("需要 --turn 或 --message")
 
     pid = args.protocol or "adhoc"
-    convo_dir = os.path.join(HERE, os.pardir, "results", pid, "_convos")
+    convo_dir = os.path.join(HERE, "transcripts", pid, "_convos")
     os.makedirs(convo_dir, exist_ok=True)
     path = os.path.join(convo_dir, args.convo + ".json")
 
