@@ -37,6 +37,8 @@
 🆕 最近加入：Fable-5 · GLM-5.2 · GLM智谱新站(web) · GLM智谱清言(web)
 <!-- LATEST:END -->
 
+📊 图片版（便于转发）：[Collatz 榜](scoring/board-collatz.jpg) · [《礼物》榜](scoring/board-gift.jpg) — 用 `scoring/board_image.py` 生成，可 `--highlight` 高亮指定模型。
+
 ### Collatz-16 — 看着要算、一句话能秒；测**敢不敢不思考**
 
 分越高越好。`均值`=多次重复的平均档分，`最差一次`=多次里最低那档。满分 1.0=零思考直接秒；负分=费力还答错。网页/API 同列，是因为同模型不同入口差异巨大本身就是看点。

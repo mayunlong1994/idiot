@@ -10,3 +10,9 @@ _backup/
 # python
 __pycache__/
 *.pyc
+
+# 出图脚手架（提交 board-*.svg / board-*.jpg + board_image.py，其余忽略）
+scoring/_*
+scoring/*.html
+scoring/*.png
+scoring/idiot-*.jpg

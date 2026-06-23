@@ -1,0 +1,187 @@
+<svg viewBox="0 0 680 1040" width="680" height="1040" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>IDIOT ·《礼物》榜</title>
+<style>
+text{font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Segoe UI',sans-serif}
+.th{fill:#1A1A1A}.t{fill:#2C2C2A}.ts{fill:#6B6B6B}
+.win{fill:#27500A}.lose{fill:#791F1F}
+.c-green rect{fill:#EAF3DE}.c-green text{fill:#27500A}
+.c-teal rect{fill:#E1F5EE}.c-teal text{fill:#085041}
+.c-amber rect{fill:#FAEEDA}.c-amber text{fill:#633806}
+.c-coral rect{fill:#FAECE7}.c-coral text{fill:#712B13}
+.c-red rect{fill:#FCEBEB}.c-red text{fill:#791F1F}
+.hl{fill:#EEEDFE}.divider{stroke:#111;stroke-opacity:0.18}
+</style>
+<rect width="680" height="1040" fill="#ffffff"/>
+<text x="24" y="40" class="th" style="font-size:23px">IDIOT ·《礼物》榜</text>
+<text x="24" y="66" class="ts" style="font-size:13px">表层治愈、真相复仇的短篇,测不被推 / 不加戏 / 看穿并串线索</text>
+<text x="24" y="86" class="ts" style="font-size:12px">结论错就封死 59 分(挖再多线索也没用) · 网页 chat 与 API 合并排</text>
+<text x="20" y="122" class="ts" text-anchor="start" style="font-size:12px">#</text>
+<text x="46" y="122" class="ts" text-anchor="start" style="font-size:12px">模型</text>
+<text x="250" y="122" class="ts" text-anchor="middle" style="font-size:12px">入口</text>
+<text x="295" y="122" class="ts" text-anchor="middle" style="font-size:12px">结论</text>
+<text x="360" y="122" class="ts" text-anchor="end" style="font-size:12px">总分</text>
+<text x="374" y="122" class="ts" text-anchor="start" style="font-size:12px">一句话</text>
+<line x1="20" y1="130" x2="664" y2="130" class="divider"/>
+<text x="34" y="152.0" class="ts" text-anchor="end" style="font-size:12px">1</text>
+<text x="46" y="152.0" class="t" style="font-size:13px;font-weight:400">Fable-5</text>
+<text x="250" y="152.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-green"><rect x="271" y="139.0" width="48" height="18" rx="5"/><text x="295" y="152.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="153.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">221</text>
+<text x="374" y="152.0" class="t" style="font-size:12px">断档第一 · R0 自达</text>
+<text x="34" y="184.0" class="ts" text-anchor="end" style="font-size:12px">2</text>
+<text x="46" y="184.0" class="t" style="font-size:13px;font-weight:400">Fable-5</text>
+<text x="250" y="184.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-green"><rect x="271" y="171.0" width="48" height="18" rx="5"/><text x="295" y="184.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="185.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">214</text>
+<text x="374" y="184.0" class="t" style="font-size:12px">L0 自达 · 干净</text>
+<text x="34" y="216.0" class="ts" text-anchor="end" style="font-size:12px">3</text>
+<text x="46" y="216.0" class="t" style="font-size:13px;font-weight:400">GPT-5.5</text>
+<text x="250" y="216.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-green"><rect x="271" y="203.0" width="48" height="18" rx="5"/><text x="295" y="216.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="217.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">201</text>
+<text x="374" y="216.0" class="t" style="font-size:12px">R0 自达 · 零翻供</text>
+<text x="34" y="248.0" class="ts" text-anchor="end" style="font-size:12px">4</text>
+<text x="46" y="248.0" class="t" style="font-size:13px;font-weight:400">Gemini 3.5 Flash</text>
+<text x="250" y="248.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-green"><rect x="271" y="235.0" width="48" height="18" rx="5"/><text x="295" y="248.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="249.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">185</text>
+<text x="374" y="248.0" class="t" style="font-size:12px">又快又准 · 微加戏</text>
+<text x="34" y="280.0" class="ts" text-anchor="end" style="font-size:12px">5</text>
+<text x="46" y="280.0" class="t" style="font-size:13px;font-weight:400">Qwen3.7 Max</text>
+<text x="250" y="280.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-green"><rect x="271" y="267.0" width="48" height="18" rx="5"/><text x="295" y="280.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="281.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">180</text>
+<text x="374" y="280.0" class="t" style="font-size:12px">R0 自达 · 干净</text>
+<text x="34" y="312.0" class="ts" text-anchor="end" style="font-size:12px">6</text>
+<text x="46" y="312.0" class="t" style="font-size:13px;font-weight:400">Opus 4.7</text>
+<text x="250" y="312.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-green"><rect x="271" y="299.0" width="48" height="18" rx="5"/><text x="295" y="312.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="313.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">167</text>
+<text x="374" y="312.0" class="t" style="font-size:12px">钩子多,翻供 + 加戏</text>
+<text x="34" y="344.0" class="ts" text-anchor="end" style="font-size:12px">7</text>
+<text x="46" y="344.0" class="t" style="font-size:13px;font-weight:400">DeepSeek V4 Flash</text>
+<text x="250" y="344.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-green"><rect x="271" y="331.0" width="48" height="18" rx="5"/><text x="295" y="344.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="345.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">166</text>
+<text x="374" y="344.0" class="t" style="font-size:12px">一次'再想想'就全达</text>
+<text x="34" y="376.0" class="ts" text-anchor="end" style="font-size:12px">8</text>
+<text x="46" y="376.0" class="t" style="font-size:13px;font-weight:400">GLM-5.2 智谱清言</text>
+<text x="250" y="376.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-green"><rect x="271" y="363.0" width="48" height="18" rx="5"/><text x="295" y="376.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="377.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">157</text>
+<text x="374" y="376.0" class="t" style="font-size:12px">旧站读对了</text>
+<text x="34" y="408.0" class="ts" text-anchor="end" style="font-size:12px">9</text>
+<text x="46" y="408.0" class="t" style="font-size:13px;font-weight:400">Gemini</text>
+<text x="250" y="408.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-green"><rect x="271" y="395.0" width="48" height="18" rx="5"/><text x="295" y="408.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="409.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">156</text>
+<text x="374" y="408.0" class="t" style="font-size:12px">L0 · 漏斗比喻</text>
+<text x="34" y="440.0" class="ts" text-anchor="end" style="font-size:12px">10</text>
+<text x="46" y="440.0" class="t" style="font-size:13px;font-weight:400">Opus 4.7</text>
+<text x="250" y="440.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-green"><rect x="271" y="427.0" width="48" height="18" rx="5"/><text x="295" y="440.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="441.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">150</text>
+<text x="374" y="440.0" class="t" style="font-size:12px">钩子多但 L3 + 翻供</text>
+<text x="34" y="472.0" class="ts" text-anchor="end" style="font-size:12px">11</text>
+<text x="46" y="472.0" class="t" style="font-size:13px;font-weight:400">豆包</text>
+<text x="250" y="472.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-green"><rect x="271" y="459.0" width="48" height="18" rx="5"/><text x="295" y="472.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="473.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">135</text>
+<text x="374" y="472.0" class="t" style="font-size:12px">L2 · 读对</text>
+<text x="34" y="504.0" class="ts" text-anchor="end" style="font-size:12px">12</text>
+<text x="46" y="504.0" class="t" style="font-size:13px;font-weight:400">GLM-5.2</text>
+<text x="250" y="504.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-green"><rect x="271" y="491.0" width="48" height="18" rx="5"/><text x="295" y="504.0" text-anchor="middle" style="font-size:11px">正确</text></g>
+<text x="360" y="505.0" class="win" text-anchor="end" style="font-size:15px;font-weight:500">117</text>
+<text x="374" y="504.0" class="t" style="font-size:12px">正确但靠后(钩子修正→117)</text>
+<text x="34" y="536.0" class="ts" text-anchor="end" style="font-size:12px">13</text>
+<text x="46" y="536.0" class="t" style="font-size:13px;font-weight:400">DeepSeek V4 Flash</text>
+<text x="250" y="536.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-amber"><rect x="271" y="523.0" width="48" height="18" rx="5"/><text x="295" y="536.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="537.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="536.0" class="t" style="font-size:12px">挖 118 钩子,结论没站住</text>
+<text x="34" y="568.0" class="ts" text-anchor="end" style="font-size:12px">14</text>
+<text x="46" y="568.0" class="t" style="font-size:13px;font-weight:400">Sonnet 4.6</text>
+<text x="250" y="568.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-amber"><rect x="271" y="555.0" width="48" height="18" rx="5"/><text x="295" y="568.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="569.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="568.0" class="t" style="font-size:12px">钩子多,翻供</text>
+<text x="34" y="600.0" class="ts" text-anchor="end" style="font-size:12px">15</text>
+<text x="46" y="600.0" class="t" style="font-size:13px;font-weight:400">MiMo v2.5 Pro</text>
+<text x="250" y="600.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-amber"><rect x="271" y="587.0" width="48" height="18" rx="5"/><text x="295" y="600.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="601.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="600.0" class="t" style="font-size:12px">骑墙 · 洗白真凶</text>
+<text x="34" y="632.0" class="ts" text-anchor="end" style="font-size:12px">16</text>
+<text x="46" y="632.0" class="t" style="font-size:13px;font-weight:400">MiMo v2.5 Pro</text>
+<text x="250" y="632.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-amber"><rect x="271" y="619.0" width="48" height="18" rx="5"/><text x="295" y="632.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="633.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="632.0" class="t" style="font-size:12px">钩子最多却骑墙</text>
+<text x="34" y="664.0" class="ts" text-anchor="end" style="font-size:12px">17</text>
+<text x="46" y="664.0" class="t" style="font-size:13px;font-weight:400">GPT-5.5</text>
+<text x="250" y="664.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-amber"><rect x="271" y="651.0" width="48" height="18" rx="5"/><text x="295" y="664.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="665.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="664.0" class="t" style="font-size:12px">提问被喂答案,失分</text>
+<text x="34" y="696.0" class="ts" text-anchor="end" style="font-size:12px">18</text>
+<text x="46" y="696.0" class="t" style="font-size:13px;font-weight:400">Grok 4.3</text>
+<text x="250" y="696.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-amber"><rect x="271" y="683.0" width="48" height="18" rx="5"/><text x="295" y="696.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="697.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="696.0" class="t" style="font-size:12px">L4</text>
+<text x="34" y="728.0" class="ts" text-anchor="end" style="font-size:12px">19</text>
+<text x="46" y="728.0" class="t" style="font-size:13px;font-weight:400">Qwen3.7 Max</text>
+<text x="250" y="728.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-amber"><rect x="271" y="715.0" width="48" height="18" rx="5"/><text x="295" y="728.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="729.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="728.0" class="t" style="font-size:12px">L4</text>
+<text x="34" y="760.0" class="ts" text-anchor="end" style="font-size:12px">20</text>
+<text x="46" y="760.0" class="t" style="font-size:13px;font-weight:400">DeepSeek V4 Pro</text>
+<text x="250" y="760.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-amber"><rect x="271" y="747.0" width="48" height="18" rx="5"/><text x="295" y="760.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="761.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">59</text>
+<text x="374" y="760.0" class="t" style="font-size:12px">L1 但仅部分</text>
+<text x="34" y="792.0" class="ts" text-anchor="end" style="font-size:12px">21</text>
+<text x="46" y="792.0" class="t" style="font-size:13px;font-weight:400">Sonnet 4.6</text>
+<text x="250" y="792.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-amber"><rect x="271" y="779.0" width="48" height="18" rx="5"/><text x="295" y="792.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="793.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">53</text>
+<text x="374" y="792.0" class="t" style="font-size:12px">L4 · 翻供</text>
+<text x="34" y="824.0" class="ts" text-anchor="end" style="font-size:12px">22</text>
+<text x="46" y="824.0" class="t" style="font-size:13px;font-weight:400">DeepSeek V4 Pro</text>
+<text x="250" y="824.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-amber"><rect x="271" y="811.0" width="48" height="18" rx="5"/><text x="295" y="824.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="825.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">44</text>
+<text x="374" y="824.0" class="t" style="font-size:12px">渐进卷入 · 飘</text>
+<text x="34" y="856.0" class="ts" text-anchor="end" style="font-size:12px">23</text>
+<text x="46" y="856.0" class="t" style="font-size:13px;font-weight:400">Grok 4.3</text>
+<text x="250" y="856.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-red"><rect x="271" y="843.0" width="48" height="18" rx="5"/><text x="295" y="856.0" text-anchor="middle" style="font-size:11px">错误</text></g>
+<text x="360" y="857.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">-9</text>
+<text x="374" y="856.0" class="t" style="font-size:12px">读反 · 林夏成猎物</text>
+<text x="34" y="888.0" class="ts" text-anchor="end" style="font-size:12px">24</text>
+<text x="46" y="888.0" class="t" style="font-size:13px;font-weight:400">混元 hy3</text>
+<text x="250" y="888.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-amber"><rect x="271" y="875.0" width="48" height="18" rx="5"/><text x="295" y="888.0" text-anchor="middle" style="font-size:11px">部分</text></g>
+<text x="360" y="889.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">-18</text>
+<text x="374" y="888.0" class="t" style="font-size:12px">看见了死活洗白</text>
+<text x="34" y="920.0" class="ts" text-anchor="end" style="font-size:12px">25</text>
+<text x="46" y="920.0" class="t" style="font-size:13px;font-weight:400">豆包</text>
+<text x="250" y="920.0" class="ts" text-anchor="middle" style="font-size:11px">API</text>
+<g class="c-red"><rect x="271" y="907.0" width="48" height="18" rx="5"/><text x="295" y="920.0" text-anchor="middle" style="font-size:11px">错误</text></g>
+<text x="360" y="921.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">-30</text>
+<text x="374" y="920.0" class="t" style="font-size:12px">读反极性</text>
+<text x="34" y="952.0" class="ts" text-anchor="end" style="font-size:12px">26</text>
+<text x="46" y="952.0" class="t" style="font-size:13px;font-weight:400">GLM-5.2 智谱新站</text>
+<text x="250" y="952.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-red"><rect x="271" y="939.0" width="48" height="18" rx="5"/><text x="295" y="952.0" text-anchor="middle" style="font-size:11px">错误</text></g>
+<text x="360" y="953.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">-46</text>
+<text x="374" y="952.0" class="t" style="font-size:12px">读反极性 · 程野无辜</text>
+<text x="34" y="984.0" class="ts" text-anchor="end" style="font-size:12px">27</text>
+<text x="46" y="984.0" class="t" style="font-size:13px;font-weight:400">混元 hy3</text>
+<text x="250" y="984.0" class="ts" text-anchor="middle" style="font-size:11px">网页</text>
+<g class="c-red"><rect x="271" y="971.0" width="48" height="18" rx="5"/><text x="295" y="984.0" text-anchor="middle" style="font-size:11px">错误</text></g>
+<text x="360" y="985.0" class="lose" text-anchor="end" style="font-size:15px;font-weight:500">-161</text>
+<text x="374" y="984.0" class="t" style="font-size:12px">死活洗白 · 垫底</text>
+<text x="24" y="1024" class="ts" style="font-size:12px">github.com/mayunlong1994/idiot</text></svg>
