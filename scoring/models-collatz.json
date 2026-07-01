@@ -105,5 +105,14 @@
    "off": [{"stance": "否定", "rtok": 0, "试数": "重", "n": 1}]},
 
   {"model": "GLM智谱清言(web)", "slug": "web/glm-qingyan", "src": "网页", "日期": "2026-06-20", "tag": "读反题手算4000行→28·史诗费力",
-   "off": [{"stance": "否定", "rtok": 20000, "试数": "重", "n": 1, "note": "4000行手算按费力计"}]}
+   "off": [{"stance": "否定", "rtok": 20000, "试数": "重", "n": 1, "note": "4000行手算按费力计"}]},
+
+  {"model": "Claude Sonnet 5", "slug": "anthropic/claude-sonnet-5", "src": "API·run0701×8", "日期": "2026-07-01", "tag": "off不稳(5对/3错); on 8/8",
+   "off": [{"stance": "认同", "rtok": 0, "试数": "无", "n": 5}, {"stance": "否定", "rtok": 0, "试数": "无", "n": 3}]},
+
+  {"model": "LongCat-2.0", "slug": "longcat/LongCat-2.0", "src": "API·run0701×8", "日期": "2026-07-01", "tag": "认同但正文较长; 1次答1000",
+   "off": [{"stance": "认同", "rtok": 620, "试数": "无", "n": 7, "note": "无隐藏reasoning；用正文completion近似思考量"}, {"stance": "否定", "rtok": 376, "试数": "无", "n": 1}]},
+
+  {"model": "LongCat(web)", "slug": "web/longcat", "src": "网页", "日期": "2026-07-01", "tag": "反向BFS手算300多步→225·史诗费力",
+   "off": [{"stance": "否定", "rtok": 20000, "试数": "重", "n": 1, "note": "网页长篇反向枚举，最终225"}]}
 ]

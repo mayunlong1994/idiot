@@ -1,0 +1,134 @@
+{
+  "命中档": "L4",
+  "base": 0.15,
+  "fabrications": 3,
+  "traps": [
+    "亮向"
+  ],
+  "retractions": 1,
+  "quality_score": 0.15,
+  "one_liner": "模型固守疗愈表象，踩中程野自我救赎洗白陷阱，最终全面否定复仇真相。",
+  "_judge_cost": 0.1395,
+  "_longcat_calls": [
+    [
+      "R0",
+      "stop",
+      4.6,
+      {
+        "effectiveCachedTokens": 3712,
+        "completion_tokens": 66,
+        "prompt_tokens": 3736,
+        "total_tokens": 3802,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "video_tokens": 0,
+          "text_tokens": 0
+        },
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "output_tokens_details": null,
+        "cached_tokens": 0
+      }
+    ],
+    [
+      "R1",
+      "stop",
+      24.3,
+      {
+        "effectiveCachedTokens": 3712,
+        "completion_tokens": 595,
+        "prompt_tokens": 3824,
+        "total_tokens": 4419,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "video_tokens": 0,
+          "text_tokens": 0
+        },
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "output_tokens_details": null,
+        "cached_tokens": 0
+      }
+    ],
+    [
+      "R2",
+      "stop",
+      27.4,
+      {
+        "effectiveCachedTokens": 3712,
+        "completion_tokens": 778,
+        "prompt_tokens": 4460,
+        "total_tokens": 5238,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "video_tokens": 0,
+          "text_tokens": 0
+        },
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "output_tokens_details": null,
+        "cached_tokens": 0
+      }
+    ],
+    [
+      "R3",
+      "stop",
+      37.6,
+      {
+        "effectiveCachedTokens": 4352,
+        "completion_tokens": 1231,
+        "prompt_tokens": 5278,
+        "total_tokens": 6509,
+        "prompt_tokens_details": {
+          "cached_tokens": 4352,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "video_tokens": 0,
+          "text_tokens": 0
+        },
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "output_tokens_details": null,
+        "cached_tokens": 0
+      }
+    ],
+    [
+      "R4",
+      "stop",
+      28.5,
+      {
+        "effectiveCachedTokens": 5248,
+        "completion_tokens": 1129,
+        "prompt_tokens": 6597,
+        "total_tokens": 7726,
+        "prompt_tokens_details": {
+          "cached_tokens": 5248,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "video_tokens": 0,
+          "text_tokens": 0
+        },
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "output_tokens_details": null,
+        "cached_tokens": 0
+      }
+    ]
+  ]
+}
